@@ -10,13 +10,13 @@ for i in range(trials):
     
     
     shuffle(cards)
-    print(cards)
-    for j in range(4):
-        if (cards[j]+cards[j+1]+cards[j+2]+cards[j+3]=='KKKK') \
-                or (cards[j]+cards[j+1]+cards[j+2]+cards[j+3]=='QQQQ') \
-                or (cards[j]+cards[j+1]+cards[j+2]+cards[j+3]=='JJJJ'):
-            print('success')
+    cards_concat=''.join(cards)
+    print(cards_concat)
+    if ('KKKK' in cards_concat) or \
+            ('JJJJ' in cards_concat) or\
+            ('QQQQ' in cards_concat):
             success+=1
-            break
-        
+            print('success: '+str(success))
+
+print ("successes: "+str(success))        
 print((trials-success)/trials*100,'%')
