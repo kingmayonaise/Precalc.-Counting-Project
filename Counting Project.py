@@ -4,7 +4,7 @@ import random
 cards=['K','K','K','K','Q','Q','Q','Q','J','J','J','J']
 
 success=0
-trials=10000
+trials=100
 
 for i in range(trials):
     
