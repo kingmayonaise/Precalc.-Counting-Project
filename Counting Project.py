@@ -10,8 +10,9 @@ for i in range(trials):
     
     
     shuffle(cards)
-    for j in range(10):
-        if [j:0]+[j:1]:
+    print(cards)
+    for j in range(4):
+        if cards[j]+cards[j+1]+cards[j+2]+cards[j+3]=='KKKK'or'QQQQ'or'JJJJ':
             print('failure')
             #failures+=1
             #break
