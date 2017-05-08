@@ -4,14 +4,14 @@ import random
 cards=['K','K','K','K','Q','Q','Q','Q','J','J','J','J']
 
 success=0
-trials=100
+trials=1000
 
 for i in range(trials):
     
     
     shuffle(cards)
     cards_concat=''.join(cards)
-    print(cards_concat)
+    print(cards)
     if ('KKKK' in cards_concat) or \
             ('JJJJ' in cards_concat) or\
             ('QQQQ' in cards_concat):
