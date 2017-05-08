@@ -10,8 +10,9 @@ for i in range(trials):
     
     
     shuffle(cards)
-    for j in range(11):
-        print(cards)
+    for j in range(10):
+        if [j:0]+[j:1]:
+            print('failure')
             #failures+=1
             #break
         
