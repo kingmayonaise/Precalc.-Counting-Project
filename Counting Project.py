@@ -25,7 +25,7 @@ for i in range(trials):
 kidsandteachers=['K','K','K','K','K','K','K','K','K','K','K','K','T','T','T']
 
 success=0
-trials=1000
+trials=10000
 
 for i in range(trials):
     
@@ -38,4 +38,4 @@ for i in range(trials):
             print('success: '+str(success))
 
 print ("successes: "+str(success))        
-print((trials-success)/trials*100,'%')
+print((success)/trials*100,'%')
