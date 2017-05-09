@@ -33,7 +33,7 @@ for i in range(trials):
     shuffle(kidsandteachers)
     kandt_concat=''.join(kidsandteachers)
     print(kandt_concat)
-    if ('KTK' in kandt_concat):
+    if kandt_concat.count('KTK')==3:
             success+=1
             print('success: '+str(success))
 
