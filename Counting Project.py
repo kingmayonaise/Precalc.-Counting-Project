@@ -30,7 +30,7 @@ for i in range(trials):
     
     
     shuffle(kidsandteachers)
-    print(''.join(kidsandteachers))
+    #print(''.join(kidsandteachers))
     numberofKTK=0
     for j in range(11):
         if (kidsandteachers[j]+kidsandteachers[j+1]+kidsandteachers[j+2]+kidsandteachers[j+3]+kidsandteachers[j+4])=='KKTKK':
@@ -38,7 +38,7 @@ for i in range(trials):
             if numberofKTK==3:
                 numberofKTK=0
                 success+=1
-                print('success: '+str(success))
+                #print('success: '+str(success))
 
 print ("successes: "+str(success))        
 print((success)/trials*100,'%')
