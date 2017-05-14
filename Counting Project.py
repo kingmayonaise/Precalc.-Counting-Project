@@ -50,11 +50,7 @@ pairs=[1,1,2,2,3,3,4,4,5,5]
 success=0
 trials=10
 paircount=0
-onepair=0
-twopair=0
-threepair=0
-fourpair=0
-fivepair=0
+paircounters=[]
 for i in range(trials):
     paircount=0
     shuffle(pairs)
@@ -73,9 +69,8 @@ for i in range(trials):
         fourpair+=1
     elif paircount==5:
         fivepair+=1
-print(onepair,twopair,threepair,fourpair,fivepair)
-print((onepair*((22680/1134000)*1))+(twopair*((5040/1134000)*2))+(threepair*((1260/1134000)*3))+(fourpair*((360/1134000)*4))+(fivepair*((120/1134000)*5)))
-
+print(paircounters)
+print(
 
     
     
