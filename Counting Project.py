@@ -49,8 +49,7 @@ pairs=[1,1,2,2,3,3,4,4,5,5]
 
 success=0
 trials=10
-paircount=0
-paircounters=[]
+paircounters=[0,0,0,0,0]
 for i in range(trials):
     paircount=0
     shuffle(pairs)
@@ -59,18 +58,11 @@ for i in range(trials):
         if (int(str(pairs[j])+str(pairs[j+1]))%11)==0:
            paircount+=1
            print('pair')
-    if paircount==1:
-        onepair+=1
-    elif paircount==2:
-        twopair+=1
-    elif paircount==3:
-        threepair+=1
-    elif paircount==4:
-        fourpair+=1
-    elif paircount==5:
-        fivepair+=1
+    if paircount>0:
+        paircounters[paircount-1]+=1
 print(paircounters)
-print(
+print(((paircounters[0]/trials)*1)+((paircounters[1]/trials)*2)+((paircounters[2]/trials)*3)+((paircounters[3]/trials)*4)+((paircounters[4]/trials)*5))
+
 
     
     
