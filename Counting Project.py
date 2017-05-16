@@ -55,7 +55,7 @@ paircounters=[0,0,0,0,0]
 for i in range(trials):
     paircount=0
     shuffle(pairs)
-    print(pairs)
+    #print(pairs)
     for j in range(9):
         if (int(str(pairs[j])+str(pairs[j+1]))%11)==0:
            paircount+=1
@@ -73,8 +73,6 @@ print ('2 pairs '+str(paircounters[1]/trials))
 print ('3 pairs '+str(paircounters[2]/trials))
 print ('4 pairs '+str(paircounters[3]/trials))
 print ('5 pairs '+str(paircounters[4]/trials))
-print(onecounter/trials)
-print ('Total '+str(totalcounter))
 
 
     
